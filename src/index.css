@@ -1,0 +1,60 @@
+* {
+  font-family: 'Roboto Mono', monospace;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(to left, rgb(5, 8, 40), rgb(1, 4, 39));
+}
+
+/* Global responsive base */
+html {
+  /* Fluid type scale for better readability across viewports */
+  font-size: clamp(14px, 1.1vw + 8px, 18px);
+}
+
+img, video, canvas, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Prevent layout shift by boxing elements consistently */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* add to src/App.css or src/index.css */
+.nav-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #fbd9ad; /* adjust color */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #fff; /* optional */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
+
+/* if the icon is an image */
+.nav-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 50%;
+}
+
+/* if the icon is an svg / react-icon */
+.nav-icon .icon-svg {
+  font-size: 18px; /* adjust to center the svg */
+  color: #6b2a89;  /* optional icon color */
+}

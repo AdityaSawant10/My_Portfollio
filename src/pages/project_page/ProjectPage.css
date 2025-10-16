@@ -1,0 +1,47 @@
+.singleProject {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+/* ensure image sits below overlay and transitions smoothly */
+.singleProject .project-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s ease, opacity 0.35s ease;
+  z-index: 0;
+  will-change: transform;
+}
+
+/* gentle zoom on hover (keeps image visible) */
+.singleProject:hover .project-image {
+  transform: scale(1.06);
+  opacity: 1;
+}
+
+/* overlay above image */
+.singleProject .project-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: clamp(12px, 2.4vw, 20px);
+  text-align: left;
+  pointer-events: auto; /* keep buttons/links clickable */
+  transition: background 0.35s ease, opacity 0.35s ease;
+}
+
+/* keep overlay semi-transparent so image remains visible */
+.singleProject .project-overlay {
+  background: linear-gradient(to top, rgba(0,0,0,0.65), rgba(0,0,0,0.1));
+}
+
+/* optional: slightly brighten overlay on hover without hiding image */
+.singleProject:hover .project-overlay {
+  background: linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.08));
+}
