@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fa2b64a4.css",
+    "main.js": "/static/js/main.9b33d88a.js",
+    "static/js/787.5c0b2d12.chunk.js": "/static/js/787.5c0b2d12.chunk.js",
+    "static/media/railway.png": "/static/media/railway.704bc6d8988e25e1ef8e.png",
+    "static/media/p2p.png": "/static/media/p2p.98d082d9c9290dad5dbd.png",
+    "static/media/redhat.png": "/static/media/redhat.4650e4f311f08d5e76ed.png",
+    "index.html": "/index.html",
+    "main.fa2b64a4.css.map": "/static/css/main.fa2b64a4.css.map",
+    "main.9b33d88a.js.map": "/static/js/main.9b33d88a.js.map",
+    "787.5c0b2d12.chunk.js.map": "/static/js/787.5c0b2d12.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fa2b64a4.css",
+    "static/js/main.9b33d88a.js"
+  ]
+}
